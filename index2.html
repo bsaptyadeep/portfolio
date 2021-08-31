@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <script src="https://kit.fontawesome.com/41aec609d7.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Fill the form to contact with me</h1>
+    <div class="cont1">
+        <div class="s1">
+            <div class="share">
+                <div class="soc"><a href=""><i class="fab fa-github-alt"></i></a></div>
+                <div class="soc"><a href=""><i class="fab fa-linkedin-in"></i></a></div>
+                <div class="soc"><a href=""><i class="fab fa-twitter"></i></a></div>
+                <div class="soc"><a href=""><i class="fab fa-instagram"></i></a></div>
+            </div>
+        </div>
+        <div class="s2">
+            <div class="container">
+                <form  action="https://formspree.io/f/mzbyyzdz"
+                method="POST">
+                    <label><b>I want to</b></label>
+                    <select id="role" name="role">
+                        <option value="Hello">Say you hello</option>
+                        <option value="Freelance">Offer you a Freelance project</option>
+                        <option value="Intern">Offer you an Internship</option>
+                        <option value="Job">Offer you a Job</option>
+                    </select>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <input type="number" id="phone" name="phone" placeholder="Enter your Phone Number">
+                    <input type="email" id="email" name="email" placeholder="Enter your e-mail ID">
+                    <textarea id="subject" name="subject" placeholder="Leave your message......"
+                        style="height:150px;"></textarea>
+                    <input class="submit" style="width: 100px; height: 40px; margin-bottom: 40px;" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

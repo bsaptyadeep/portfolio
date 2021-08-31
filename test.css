@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+h1{
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+body{
+    background: url(assets/images/4533600.jpg);
+    background-size: cover;
+    width: 100%;
+    font-family: 'Hind Madurai', sans-serif;
+    color: white;
+}
+
+.cont1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    margin-left: 210px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.s1{
+    background: url(cont_0001.png);
+    border-radius: 30px 0px 0px 30px;
+    height: 500px;
+    width: 210px;
+    background-size: cover;
+}
+
+.s2{
+    background-color: rgba(231, 161, 255, 0.5);
+    width: 60%;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.container{
+    width: 90%;
+    margin-left: 50px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 10px;
+    margin-top: 20px;
+}
+
+select, input, textarea {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+img{
+    height: 500px;
+}
+
+.submit{
+    background: linear-gradient(114.45deg, rgba(65, 34, 255, 0.5) -26.33%, rgba(164, 149, 255, 0) 132.49%), #38FFC3;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: #38FFC3;
+}
+
+.share{
+    margin: 15px;
+}
+
+.share i {
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    background-color: #303030;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+
+@media only screen and (max-width: 1140px){
+    .cont1{
+        flex-direction: column;
+        margin: 0px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .s1{
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    .s2{
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .container{
+        width: 90%;
+        margin-left: 10px;
+    }
+    .s1{
+        width: 80%;
+        background: url(cont_0002.png);
+        height: 502px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .s2{
+        width: 80%;
+    }
+}

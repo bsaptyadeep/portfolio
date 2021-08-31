@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!--image slider start-->
+  <div class="slider">
+    <div class="slides">
+      <!--radio buttons start-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!--radio buttons end-->
+      <!--slide images start-->
+      <div class="slide first">
+        <div class="det">
+          <div class="det2">
+            <h1>My Portfolio Website</h1>
+            <img src="pro__0001.png" alt="">
+            <ul>
+              <li>30%  HTML</li>
+              <li>60%  CSS</li>
+              <li>10%  javascript</li>
+            </ul>
+          </div>
+          <figure style="margin-top: 120px;">
+            <svg viewBox="0 0 60 160">
+              <circle class="pie1" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+              <circle class="pie2" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+              <circle class="pie3" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+            </svg>
+          </figure>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="det">
+          <div class="det2">
+            <h1>LANDING PAGE</h1>
+            <p><a href="www.lasvegasgoodtimes.com" style="text-decoration: none; color: #370b55;"><b style="font-size: 20px;">Lasvegasgoodtimes.com</b></a> Freelance project</p>
+            <img src="pro_0002.png" alt="" style="width: 200px; height: 220px;">
+            <ul>
+              <li>40%  HTML</li>
+              <li>60%  CSS</li>
+            </ul>
+          </div>
+          <figure>
+            <svg viewBox="0 0 40 150">
+              <circle class="pie4 sec" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+              <circle class="pie5 sec" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+            </svg>
+          </figure>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="det">
+          <div class="det2">
+            <h1>Quizz App</h1>
+            <img src="pro_0003.png" alt="">
+            <ul>
+              <li>60% React</li>
+              <li>10% HTML</li>
+              <li>20% CSS</li>
+            </ul>
+          </div>
+          <figure>
+            <svg viewBox="0 0 40 150">
+              <circle class="pie6 sec1" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+              <circle class="pie7 sec1" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+              <circle class="pie8 sec1" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+            </svg>
+          </figure>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="det">
+          <div class="det2">
+            <a href="https://foto-editor-9fc70.web.app/" style="text-decoration: none; color: #370b55;"><h1>Photo Editor App</h1></a>
+            <img src="pro_0004.png" alt="">
+            <ul>
+              <li>60% React</li>
+              <li>10% HTML</li>
+              <li>20% CSS</li>
+            </ul>
+          </div>
+          <figure>
+            <svg viewBox="0 0 40 150">
+              <circle class="pie6 sec1" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+              <circle class="pie7 sec1" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+              <circle class="pie8 sec1" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+            </svg>
+          </figure>
+        </div>
+        <!-- <img src="4.jpg" alt=""> -->
+      </div>
+      <!--slide images end-->
+      <!--automatic navigation start-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+      <!--automatic navigation end-->
+    </div>
+    <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!--manual navigation end-->
+  </div>
+  <!--image slider end-->
+
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function () {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if (counter > 4) {
+        counter = 1;
+      }
+    }, 5000);
+  </script>
+
+</body>
+
+</html>
