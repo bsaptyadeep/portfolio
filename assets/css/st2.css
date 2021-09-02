@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+
+.det{
+  /* margin-left: 30px; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.det2{
+  font-size: 15px;
+  font-family: 'Hind Madurai', sans-serif;
+  margin-left: 50px;
+}
+
+.det img{
+  margin: 30px 0px;
+  height: 180px;
+  width: 320px;
+  border-radius: 30px;
+}
+
+.det ul{
+  list-style: none;
+  font-weight: 600;
+}
+
+.slider{
+  margin: 0 auto;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #d341ff;
+  color: #370b55;
+  /* margin: 10px 40px; */
+  font-weight: 600;
+}
+
+.det2 h1{
+  letter-spacing: 5px;
+  font-family: 'Righteous', cursive;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+  /* margin: 10px 40px; */
+}
+
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #370b55;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #370b55;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #370b55;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #370b55;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #370b55;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #370b55;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #370b55;
+}
+
+
+/* ----------------------------------pie chart-------------------------------- */
+figure {
+  /* background-color: #eee; */
+  display: block;
+  height: 0;
+  margin: 0 auto;
+  position: relative;
+  font-size:16px;
+  font-size:1vw;
+  width: 40em;
+  padding-bottom: 40em;
+  margin-top: 120px;
+}
+figcaption {
+  font-size:1rem;
+  text-align:center;
+  color:#fff;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top:40%;
+  z-index:2;
+}
+svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+circle {
+	fill:rgba(0,0,0,0);
+  stroke-width:31.8309886184;
+  stroke-dasharray: 0,0,0,100;
+  stroke-dashoffset: 25;
+  -webkit-animation: pie1 3s infinite ease both;
+  animation: pie1 12s infinite ease both;
+}
+
+.sec{
+  fill:rgba(0,0,0,0);
+  stroke-width:31.8309886184;
+  stroke-dasharray: 0,0,0,100;
+  stroke-dashoffset: 25;
+  -webkit-animation: pie4 3s infinite ease both;
+  animation: pie4 12s infinite ease both;
+}
+
+.sec1{
+  fill:rgba(0,0,0,0);
+  stroke-width:31.8309886184;
+  stroke-dasharray: 0,0,0,100;
+  stroke-dashoffset: 25;
+  -webkit-animation: pie6 3s infinite ease both;
+  animation: pie6 12s infinite ease both;
+}
+
+.pie1 {
+  stroke: #9449bf;
+}
+.pie2 {
+  stroke:#4e0d87;
+  -webkit-animation-name: pie2;
+  animation-name: pie2;
+}
+.pie3 {
+  stroke:#fa9cff;
+  -webkit-animation-name: pie3;
+  animation-name: pie3;
+}
+.pie4 {
+  stroke:#9449bf;
+  -webkit-animation-name: pie4;
+  animation-name: pie4;
+}
+
+.pie5 {
+  stroke:#fa9cff;
+  -webkit-animation-name: pie5;
+  animation-name: pie5;
+}
+
+.pie6 {
+  stroke: #9449bf;
+}
+.pie7 {
+  stroke:#4e0d87;
+  -webkit-animation-name: pie7;
+  animation-name: pie7;
+}
+.pie8 {
+  stroke:#fa9cff;
+  -webkit-animation-name: pie8;
+  animation-name: pie8;
+}
+
+/*
+ pie percentage made by stroke-dasharray.
+ stroke-dasharray format is...
+
+ keyframe 100% : 0 offset this-percentage rest
+
+ I added keyframe 50% for infinite presentation.
+*/
+
+/* 1st pie is 40% */
+@-webkit-keyframes pie1 {
+  50%,100% {stroke-dasharray: 30,70,0,0;}
+}
+@keyframes pie1 {
+  50%,100% {stroke-dasharray: 30,70,0,0;}
+}
+/* 2nd pie is 30% */
+@-webkit-keyframes pie2 {
+  50%,100% {stroke-dasharray: 0,30,60,60;}
+}
+@keyframes pie2 {
+  50%,100% {stroke-dasharray: 0,30,60,60;}
+}
+/* 3rd pie is 30% */
+@-webkit-keyframes pie3 {
+  50%,100% {stroke-dasharray: 0,90,5,5;}
+}
+@keyframes pie3 {
+  50%,100% {stroke-dasharray: 0,90,10,10;}
+}
+/* 4th pie is 10% */
+
+@-webkit-keyframes pie4 {
+  50%,100% {stroke-dasharray: 40,60,0,0;}
+}
+@keyframes pie4 {
+  50%,100% {stroke-dasharray: 40,60,0,0;}
+}
+
+@-webkit-keyframes pie5 {
+  50%,100% {stroke-dasharray: 0,40,60,60;}
+}
+@keyframes pie5 {
+  50%,100% {stroke-dasharray: 0,40,60,60;}
+}
+
+@-webkit-keyframes pie6 {
+  50%,100% {stroke-dasharray: 60,30,0,0;}
+}
+@keyframes pie6 {
+  50%,100% {stroke-dasharray: 60,30,0,0;}
+}
+/* 2nd pie is 30% */
+@-webkit-keyframes pie7 {
+  50%,100% {stroke-dasharray: 0,60,20,20;}
+}
+@keyframes pie7 {
+  50%,100% {stroke-dasharray: 0,60,20,20;}
+}
+/* 3rd pie is 30% */
+@-webkit-keyframes pie8 {
+  50%,100% {stroke-dasharray: 0,80,10,10;}
+}
+@keyframes pie8 {
+  50%,100% {stroke-dasharray: 0,80,10,10;}
+}
+
+
+/* -------------------------------resposive------------------------------------- */
+
+
+@media only screen and (max-width: 1140px){
+  .det{
+    flex-direction: column;
+  }
+
+  .slider
+  {
+    width: 250px;
+    height: 500px;
+  }
+
+  .slider img{
+    width: 160px;
+    height: 100px;
+  }
+
+  .navigation-manual{
+    margin-top: -30px;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 35px;
+  }
+  .navigation-auto{
+    margin-top: 470px;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 35px;
+  }
+  figure{
+    display: none;
+  }
+  .cont{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .s1{
+    margin:10px
+  }
+  .s1 button{
+    width: 200px;
+  }
+
+  .wrapper .icon{
+    height: 5px;
+    width: 5px;
+  }
+
+}
